@@ -2,6 +2,7 @@ export * from './dispatchers';
 export * from './pipe';
 export * from './crypt.util';
 export * from './guard';
+export * from './logger';
 export * from './middleware';
 export * from './decorators';
 export * from './type.util';
