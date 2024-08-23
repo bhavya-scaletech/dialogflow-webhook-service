@@ -27,4 +27,12 @@ export class Env {
   @IsString()
   @IsNotEmpty()
   APP_URL: string;
+
+  @IsString()
+  @IsNotEmpty()
+  DIALOG_FLOW_AGENT_ID: string;
+
+  @IsString()
+  @IsNotEmpty()
+  GOOGLE_SERVICE_ACCOUNT_PATH: string;
 }

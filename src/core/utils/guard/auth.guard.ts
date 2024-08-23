@@ -1,6 +1,6 @@
 import { Injectable, CanActivate, ExecutionContext } from '@nestjs/common';
 import { Observable } from 'rxjs';
-import { JwtPayload, validateJwt } from '../index';
+import { validateJwt } from '../crypt.util';
 import { Request } from 'express';
 
 export function handleAuthentication(req: Request) {

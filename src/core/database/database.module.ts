@@ -1,9 +1,10 @@
-import { Module, Provider } from '@nestjs/common';
+import { Global, Module, Provider } from '@nestjs/common';
 import { DiseaseRepository, MedicineRepository } from './postgres/repositories';
 import { PGDataSource, PGProviderToken } from './postgres/connection';
 
-const postgresProviders: Provider[] = [MedicineRepository, DiseaseRepository];
+const postgresProviders: Provider[] = [DiseaseRepository, MedicineRepository];
 
+@Global()
 @Module({
   providers: [
     {

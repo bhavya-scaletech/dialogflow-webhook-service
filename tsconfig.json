@@ -20,6 +20,7 @@
     "paths": {
       "@core/*": ["./src/core/*"],
       "@module/*": ["./src/modules/*"]
-    }
+    },
+    "resolveJsonModule": true
   }
 }

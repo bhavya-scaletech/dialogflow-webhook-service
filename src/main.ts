@@ -30,7 +30,7 @@ async function bootstrap() {
     defaultVersion: '1',
   });
   app.useGlobalFilters(new GlobalExceptionFilter());
-  app.useGlobalInterceptors(new TransformInterceptor());
+  // app.useGlobalInterceptors(new TransformInterceptor());
   app.useGlobalPipes(new ValidationPipe());
 
   swagger(app);

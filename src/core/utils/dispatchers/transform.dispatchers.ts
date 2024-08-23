@@ -11,7 +11,7 @@ import { map } from 'rxjs/operators';
  * Success response schema
  */
 export interface Response<T> {
-  data: T;
+  payload: T;
   message: string;
   is_error: boolean;
 }
@@ -32,7 +32,7 @@ export class TransformInterceptor<T>
       map((result) => ({
         is_error: false,
         message: result?.message || '',
-        data: result?.data || {},
+        payload: result?.data || {},
       })),
     );
   }
