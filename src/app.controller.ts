@@ -6,4 +6,6 @@ export class AppController {
   ping() {
     return { message: 'It works' };
   }
+
+  @Post('/dialogflow//webhook')
 }
